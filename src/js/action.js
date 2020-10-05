@@ -131,7 +131,7 @@ export default {
                 }
             },
             save: (urlUploadImage, idUploadImage) => {
-                document.getElementById('loading').style.display = 'inline';
+                // document.getElementById('loading').style.display = 'inline';
                 const mObj = document.getElementsByClassName('tui-image-editor-save-btn');
                 mObj[0].style.opacity = 0.5;
                 mObj[0].disabled = true;
@@ -171,7 +171,7 @@ export default {
                     success: 'sucesso'
                 }).done(data => {
                     const showSucess = document.getElementById('save');
-                    document.getElementById('save').style.backgroundColor = '#51A351';
+                    document.getElementById('save').style.backgroundColor = '#51a351';
                     showSucess.innerText = 'Registro salvo com sucesso';
                     setTimeout(() => {
                         mObj[0].innerHTML = 'Salvar';
