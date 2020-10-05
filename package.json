@@ -1,5 +1,5 @@
 {
-  "name": "tui-image-editor-kdoc",
+  "name": "tui-image-editor-bestsys",
   "author": "Bestsys dev <bestsys.dev@gmail.com>",
   "version": "1.0.3",
   "license": "MIT",
@@ -7,7 +7,7 @@
     "type": "git",
     "url": "https://github.com/bestsys-dev/image-editor-kdoc.git"
   },
-  "main": "dist/tui-image-editor-kdoc.js",
+  "main": "dist/tui-image-editor-bestsys.js",
   "files": [
     "src",
     "dist",
