@@ -317,6 +317,6 @@ declare namespace tuiImageEditor {
     }
 }
 
-declare module 'tui-image-editor-kdoc' {
+declare module 'tui-image-editor-bestsys' {
     export = tuiImageEditor.ImageEditor;
 }
