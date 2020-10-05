@@ -131,7 +131,6 @@ export default {
                 }
             },
             save: (urlUploadImage, idUploadImage) => {
-                // document.getElementById('loading').style.display = 'inline';
                 const mObj = document.getElementsByClassName('tui-image-editor-save-btn');
                 mObj[0].style.opacity = 0.5;
                 mObj[0].disabled = true;
@@ -176,7 +175,6 @@ export default {
                     setTimeout(() => {
                         mObj[0].innerHTML = 'Salvar';
                         mObj[0].style.opacity = 1;
-                        document.getElementById('loading').style.display = 'none';
                         mObj[0].disabled = false;
                     }, delay);
                 }).fail(textStatus => {
@@ -187,7 +185,6 @@ export default {
                     setTimeout(() => {
                         mObj[0].innerHTML = 'Salvar';
                         mObj[0].style.opacity = 1;
-                        document.getElementById('loading').style.display = 'none';
                         mObj[0].disabled = false;
                     }, 1000);
                     console.error('Oh não!!', textStatus);
