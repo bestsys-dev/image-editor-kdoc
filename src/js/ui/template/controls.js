@@ -47,14 +47,14 @@ export default ({locale, biImage, loadButtonStyle, downloadButtonStyle, saveButt
              z-index: 99999;">
             <div id="save" style="position:fixed; overflow: hidden;
             margin: 0 0 6px; padding: 15px 15px 15px 50px; width: 300px; right: 0;
-  border-radius: 3px 3px 3px 3px;
-  background-position: 15px center;
-  background-repeat: no-repeat;
-  background-size: 24px;
-  box-shadow: 0 0 12px #999999;
-  font-weight: bold;
-  text-align: center;
-  color: #FFFFFF;">Aguarde...</div>
+                  border-radius: 3px 3px 3px 3px;
+                  background-position: 15px center;
+                  background-repeat: no-repeat;
+                  background-size: 24px;
+                  box-shadow: 0 0 12px #999999;
+                  font-weight: bold;
+                  text-align: center;
+                  color: #FFFFFF;">Aguarde...</div>
         </div>
         </div>
     </div>

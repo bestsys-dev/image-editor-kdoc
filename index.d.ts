@@ -1,4 +1,4 @@
-// Type definitions for TOAST UI Image Editor v1.0.6
+// Type definitions for TOAST UI Image Editor v1.0.8
 // TypeScript Version: 3.2.2
 
 declare namespace tuiImageEditor {
