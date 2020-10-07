@@ -49,6 +49,7 @@ export default ({locale, biImage, loadButtonStyle, downloadButtonStyle, saveButt
             margin: 0 0 6px; padding: 15px 15px 15px 50px; width: 300px; right: 0;
                   border-radius: 3px 3px 3px 3px;
                   background-position: 15px center;
+                  height: 70px;
                   background-repeat: no-repeat;
                   background-size: 24px;
                   box-shadow: 0 0 12px #999999;
