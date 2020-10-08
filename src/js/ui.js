@@ -397,7 +397,7 @@ class Ui {
      * @private
      */
     _addSaveEvent() {
-        this.eventHandler.save = () => this._actions.main.save(this.options.urlUploadImage, this.options.idUploadImage);
+        this.eventHandler.save = () => this._actions.main.save(this.options.urlUploadImage, this.options.idUploadImage, this.options);
         snippet.forEach(this._buttonElements.save, element => {
             element.addEventListener('click', this.eventHandler.save);
             console.log('retorno');

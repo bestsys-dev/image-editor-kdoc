@@ -130,7 +130,7 @@ export default {
                     w.document.body.innerHTML = `<img src='${dataURL}'>`;
                 }
             },
-            save: (urlUploadImage, idUploadImage) => {
+            save: (urlUploadImage, idUploadImage, options) => {
                 document.getElementById('loading').style.display = 'inline';
                 const mObj = document.getElementsByClassName('tui-image-editor-save-btn');
                 mObj[0].style.opacity = 0.5;
@@ -170,7 +170,7 @@ export default {
                     type: 'post',
                     success: 'sucesso'
                 }).done(data => {
-                    console.log(data);
+                    options.idUploadImage = data;
                     const showSucess = document.getElementById('save');
                     document.getElementById('save').style.backgroundColor = '#51A351';
                     showSucess.innerText = 'Registro salvo com sucesso';
