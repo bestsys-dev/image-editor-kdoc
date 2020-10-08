@@ -130,7 +130,7 @@ export default {
                     w.document.body.innerHTML = `<img src='${dataURL}'>`;
                 }
             },
-            save: (urlUploadImage, idUploadImage, test) => {
+            save: (urlUploadImage, idUploadImage) => {
                 document.getElementById('loading').style.display = 'inline';
                 const mObj = document.getElementsByClassName('tui-image-editor-save-btn');
                 mObj[0].style.opacity = 0.5;

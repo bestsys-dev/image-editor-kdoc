@@ -286,10 +286,6 @@ class Ui {
         this._addHelpMenus();
     }
 
-    teste(){
-        console.log('teste');
-    }
-
     /**
      * make array for help menu output, including partitions.
      * @returns {Array}
@@ -321,6 +317,7 @@ class Ui {
             }
         });
     }
+
     /**
      * Make menu partition element
      * @private

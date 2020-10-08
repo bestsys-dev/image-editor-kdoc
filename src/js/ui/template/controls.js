@@ -31,7 +31,7 @@ export default ({locale, biImage, loadButtonStyle, downloadButtonStyle, saveButt
             </div>            
                 ${locale.localize('Baixar')}
             </button>
-            <button id="bt-save-control" onclick="teste()" class="tui-image-editor-save-btn" style="${saveButtonStyle};">            
+            <button id="bt-save-control" class="tui-image-editor-save-btn" style="${saveButtonStyle};">            
                 ${locale.localize('Salvar')}
                 
             </button>
