@@ -170,6 +170,7 @@ export default {
                     type: 'post',
                     success: 'sucesso'
                 }).done(data => {
+                    console.log(data);
                     const showSucess = document.getElementById('save');
                     document.getElementById('save').style.backgroundColor = '#51A351';
                     showSucess.innerText = 'Registro salvo com sucesso';
