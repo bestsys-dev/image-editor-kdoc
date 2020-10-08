@@ -283,10 +283,11 @@ class Ui {
             'download': this._selectedElement.querySelectorAll('.tui-image-editor-download-btn'),
             'load': this._selectedElement.querySelectorAll('.tui-image-editor-load-btn')
         };
-
-        document.getElementById('bt-save-control').addEventListener('click', this.teste());
-
         this._addHelpMenus();
+    }
+
+    teste(){
+        console.log('teste');
     }
 
     /**
@@ -320,11 +321,6 @@ class Ui {
             }
         });
     }
-
-    teste(){
-        console.log('mainn');
-    }
-
     /**
      * Make menu partition element
      * @private
