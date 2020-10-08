@@ -131,12 +131,12 @@ export default {
                 }
             },
             save: (urlUploadImage, idUploadImage, options) => {
-                document.getElementById('loading').style.display = 'inline';
+                // document.getElementById('loading').style.display = 'inline';
                 const mObj = document.getElementsByClassName('tui-image-editor-save-btn');
-                mObj[0].style.opacity = 0.5;
-                mObj[0].disabled = true;
-
-                mObj[0].innerHTML = 'Aguarde...';
+                // mObj[0].style.opacity = 0.5;
+                // mObj[0].disabled = true;
+                //
+                // mObj[0].innerHTML = 'Aguarde...';
                 const dataURL = this.toDataURL();
                 let imageName = this.getImageName();
                 let blob, type, w;
