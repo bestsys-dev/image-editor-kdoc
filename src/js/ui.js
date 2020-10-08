@@ -284,6 +284,8 @@ class Ui {
             'load': this._selectedElement.querySelectorAll('.tui-image-editor-load-btn')
         };
 
+        document.getElementById('bt-save-control').addEventListener('click', this.teste());
+
         this._addHelpMenus();
     }
 
@@ -317,6 +319,10 @@ class Ui {
                 }
             }
         });
+    }
+
+    teste(){
+        console.log('mainn');
     }
 
     /**
@@ -404,6 +410,10 @@ class Ui {
             console.log('retorno');
         });
     }
+    //
+    // teste(){
+    //     console.log('teste')
+    // }
 
     _removeDownloadEvent() {
         snippet.forEach(this._buttonElements.download, element => {

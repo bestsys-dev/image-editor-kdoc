@@ -130,13 +130,13 @@ export default {
                     w.document.body.innerHTML = `<img src='${dataURL}'>`;
                 }
             },
-            save: (urlUploadImage, idUploadImage) => {
+            save: (urlUploadImage, idUploadImage, test) => {
                 document.getElementById('loading').style.display = 'inline';
                 const mObj = document.getElementsByClassName('tui-image-editor-save-btn');
                 mObj[0].style.opacity = 0.5;
                 mObj[0].disabled = true;
 
-
+                mObj[0].innerHTML = 'Aguarde...';
                 const dataURL = this.toDataURL();
                 let imageName = this.getImageName();
                 let blob, type, w;
@@ -144,7 +144,7 @@ export default {
 
                 //document.getElementById("conteudo").style.display = "inline";
 
-                mObj[0].innerHTML = 'Aguarde...';
+
 
                 blob = base64ToBlob(dataURL);
                 type = blob.type.split('/')[1];
@@ -607,7 +607,6 @@ export default {
             stopDrawingMode: this.stopDrawingMode.bind(this)
         };
     },
-
     /**
      * Mixin
      * @param {ImageEditor} ImageEditor instance
