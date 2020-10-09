@@ -165,7 +165,7 @@ export default {
                     cache: false,
                     contentType: false,
                     processData: false,
-                    async: false,
+                    async: true,
                     data: formData,
                     type: 'post',
                     success: 'sucesso'
