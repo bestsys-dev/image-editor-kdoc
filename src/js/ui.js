@@ -399,19 +399,18 @@ class Ui {
 
     _addSaveEvent() {
         const btn = document.querySelector('#bt-save-control');
+        btn.addEventListener('click', () => {
+            document.getElementById('loading').style.display = 'inline';
+            const mObj = document.getElementsByClassName('tui-image-editor-save-btn');
+            mObj[0].style.opacity = 0.5;
+            btn.blur();
+            mObj[0].disabled = true;
+            mObj[0].innerHTML = 'Aguarde...';
+        });
         this.eventHandler.save = () => this._actions.main.save(this.options.urlUploadImage, this.options.idUploadImage, this.options);
-        snippet.forEach(this._buttonElements.save, element => {
 
-            btn.addEventListener('click', () => {
-                document.getElementById('loading').style.display = 'inline';
-                const mObj = document.getElementsByClassName('tui-image-editor-save-btn');
-                mObj[0].style.opacity = 0.5;
-                mObj[0].disabled = true;
-                console.log('Lilian');
-                mObj[0].innerHTML = 'Aguarde...';
-            });
-            element.addEventListener('click', this.eventHandler.save);
-            console.log('retorno');
+        btn.addEventListener('blur', () => {
+            this.eventHandler.save();
         });
     }
     //
