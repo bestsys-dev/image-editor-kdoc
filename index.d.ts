@@ -1,4 +1,4 @@
-// Type definitions for TOAST UI Image Editor v1.0.19
+// Type definitions for TOAST UI Image Editor v1.0.20
 // TypeScript Version: 3.2.2
 
 declare namespace tuiImageEditor {
@@ -257,7 +257,7 @@ declare namespace tuiImageEditor {
         resizeEditor(dimension: IEditorSize): Promise<void>;
     }
 
-    class ImageEditor {
+    class ImageEditor {z
         constructor(wrapper: string | Element, options: IOptions);
         public ui: UI;
 

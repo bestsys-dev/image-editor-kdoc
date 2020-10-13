@@ -114,7 +114,11 @@ export default {
                 ));
             },
             download: () => {
-                const dataURL = this.toDataURL();
+                const option = {};
+                option['quality'] = 0.9;
+                option['format'] = 'jpeg';
+                option['multiplier'] = 0.5;
+                const dataURL = this.toDataURL(option);
                 let imageName = this.getImageName();
                 let blob, type, w;
 
@@ -137,7 +141,13 @@ export default {
                 // mObj[0].disabled = true;
                 //
                 // mObj[0].innerHTML = 'Aguarde...';
-                const dataURL = this.toDataURL();
+
+                const option = {};
+                option['quality'] = 0.9;
+                option['format'] = 'jpeg';
+                option['multiplier'] = 0.5;
+
+                const dataURL = this.toDataURL(option);
                 let imageName = this.getImageName();
                 let blob, type, w;
 
