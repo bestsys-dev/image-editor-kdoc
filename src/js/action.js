@@ -185,6 +185,8 @@ export default {
                     document.getElementById('save').style.backgroundColor = '#51A351';
                     showSucess.innerText = 'Registro salvo com sucesso';
                     setTimeout(() => {
+                        document.getElementById('save').style.backgroundColor = '#FFFFFF';
+                        showSucess.innerText = 'Aguarde...';
                         mObj[0].innerHTML = 'Salvar';
                         mObj[0].style.opacity = 1;
                         document.getElementById('loading').style.display = 'none';
@@ -196,6 +198,8 @@ export default {
                     showError.innerText = 'Atenção! Falha ao enviar a imagem';
 
                     setTimeout(() => {
+                        document.getElementById('save').style.backgroundColor = '#FFFFFF';
+                        showError.innerText = 'Aguarde...';
                         mObj[0].innerHTML = 'Salvar';
                         mObj[0].style.opacity = 1;
                         document.getElementById('loading').style.display = 'none';
