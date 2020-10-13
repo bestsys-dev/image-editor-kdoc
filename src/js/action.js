@@ -140,7 +140,7 @@ export default {
                 // mObj[0].style.opacity = 0.5;
                 // mObj[0].disabled = true;
                 //
-                // mObj[0].innerHTML = 'Aguarde...';
+                mObj[0].innerHTML = 'Aguarde...';
 
                 const option = {};
                 option['quality'] = 0.9;
@@ -185,7 +185,7 @@ export default {
                     document.getElementById('save').style.backgroundColor = '#51A351';
                     showSucess.innerText = 'Registro salvo com sucesso';
                     setTimeout(() => {
-                        document.getElementById('save').style.backgroundColor = '#FFFFFF';
+                        document.getElementById('save').style.backgroundColor = 'transparent';
                         showSucess.innerText = 'Aguarde...';
                         mObj[0].innerHTML = 'Salvar';
                         mObj[0].style.opacity = 1;
@@ -198,7 +198,7 @@ export default {
                     showError.innerText = 'Atenção! Falha ao enviar a imagem';
 
                     setTimeout(() => {
-                        document.getElementById('save').style.backgroundColor = '#FFFFFF';
+                        document.getElementById('save').style.backgroundColor = 'transparent';
                         showError.innerText = 'Aguarde...';
                         mObj[0].innerHTML = 'Salvar';
                         mObj[0].style.opacity = 1;
