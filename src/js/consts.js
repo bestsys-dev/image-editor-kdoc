@@ -20,6 +20,7 @@ export const componentNames = keyMirror(
     'FLIP',
     'ROTATION',
     'FREE_DRAWING',
+    'LINE_DOTTED',
     'LINE',
     'TEXT',
     'ICON',
@@ -114,6 +115,7 @@ export const drawingModes = keyMirror(
     'CROPPER',
     'FREE_DRAWING',
     'LINE_DRAWING',
+    'DOTTEDLINE_DRAWING',
     'TEXT',
     'SHAPE'
 );

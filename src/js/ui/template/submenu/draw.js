@@ -23,6 +23,14 @@ export default ({locale, makeSvgIcon}) => (`
                     ${locale.localize('Straight')}
                 </label>
             </div>
+            <div class="tui-image-editor-button dottedline">
+                <div>
+                    ${makeSvgIcon(['normal', 'active'], 'dotted-draw-line', true)}
+                </div>
+                <label>
+                    ${locale.localize('Linha Pontilhada')}
+                </label>
+            </div>
         </li>
         <li class="tui-image-editor-partition">
             <div></div>

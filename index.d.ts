@@ -257,7 +257,7 @@ declare namespace tuiImageEditor {
         resizeEditor(dimension: IEditorSize): Promise<void>;
     }
 
-    class ImageEditor {z
+    class ImageEditor {
         constructor(wrapper: string | Element, options: IOptions);
         public ui: UI;
 

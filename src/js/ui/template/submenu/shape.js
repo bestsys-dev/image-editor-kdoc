@@ -25,6 +25,18 @@ export default ({locale, makeSvgIcon}) => (`
                 </div>
                 <label> ${locale.localize('Triangle')} </label>
             </div>
+            <div class="tui-image-editor-button dottedcircle">
+                <div>
+                    ${makeSvgIcon(['normal', 'active'], 'shape-circle', true)}
+                </div>
+                <label> ${locale.localize('Circulo Pontilhado')} </label>
+            </div>
+            <div class="tui-image-editor-button dottedrec">
+                <div>
+                    ${makeSvgIcon(['normal', 'active'], 'shape-rectangle', true)}
+                </div>
+                <label> ${locale.localize('Retangulo Pontilhado')} </label>
+            </div>
         </li>
         <li class="tui-image-editor-partition">
             <div></div>

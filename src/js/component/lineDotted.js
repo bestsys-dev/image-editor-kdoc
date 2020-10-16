@@ -13,9 +13,9 @@ import {eventNames, componentNames, fObjectOptions} from '../consts';
  * @extends {Component}
  * @ignore
  */
-class Line extends Component {
+class LineDotted extends Component {
     constructor(graphics) {
-        super(componentNames.LINE, graphics);
+        super(componentNames.LINE_DOTTED, graphics);
 
         /**
          * Brush width
@@ -113,6 +113,7 @@ class Line extends Component {
         this._line = new fabric.Line(points, {
             stroke: this._oColor.toRgba(),
             strokeWidth: this._width,
+            strokeDashArray: [20],
             evented: false
         });
 
@@ -165,4 +166,4 @@ class Line extends Component {
     }
 }
 
-export default Line;
+export default LineDotted;

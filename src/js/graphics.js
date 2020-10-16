@@ -21,11 +21,14 @@ import ShapeDrawingMode from './drawingMode/shape';
 import TextDrawingMode from './drawingMode/text';
 import {getProperties, Promise} from './util';
 import {componentNames as components, eventNames as events, drawingModes, fObjectOptions} from './consts';
+import LineDottedDrawingMode from './drawingMode/lineDottedDrawing';
+import LineDotted from './component/lineDotted';
 
 const {extend, stamp, isArray, isString, forEachArray, forEachOwnProperties, CustomEvents} = snippet;
 const DEFAULT_CSS_MAX_WIDTH = 1000;
 const DEFAULT_CSS_MAX_HEIGHT = 800;
 const EXTRA_PX_FOR_PASTE = 10;
+const TYPE = 'dotted';
 
 const cssOnly = {
     cssOnly: true
@@ -855,6 +858,7 @@ class Graphics {
         this._register(this._drawingModeMap, new CropperDrawingMode());
         this._register(this._drawingModeMap, new FreeDrawingMode());
         this._register(this._drawingModeMap, new LineDrawingMode());
+        this._register(this._drawingModeMap, new LineDottedDrawingMode());
         this._register(this._drawingModeMap, new ShapeDrawingMode());
         this._register(this._drawingModeMap, new TextDrawingMode());
     }
@@ -870,6 +874,7 @@ class Graphics {
         this._register(this._componentMap, new Rotation(this));
         this._register(this._componentMap, new FreeDrawing(this));
         this._register(this._componentMap, new Line(this));
+        this._register(this._componentMap, new LineDotted(this));
         this._register(this._componentMap, new Text(this));
         this._register(this._componentMap, new Icon(this));
         this._register(this._componentMap, new Filter(this));

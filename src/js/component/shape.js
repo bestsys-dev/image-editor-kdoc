@@ -180,7 +180,9 @@ export default class Shape extends Component {
         return new Promise(resolve => {
             const canvas = this.getCanvas();
             options = this._extendOptions(options);
-
+            if (type === 'dottedcircle' || type === 'dottedrec') {
+                options.strokeDashArray = [10];
+            }
             const shapeObj = this._createInstance(type, options);
 
             this._bindEventOnShape(shapeObj);
@@ -241,6 +243,14 @@ export default class Shape extends Component {
                 break;
             case 'triangle':
                 instance = new fabric.Triangle(options);
+                break;
+            case 'dottedrec':
+                instance = new fabric.Rect(options);
+                break;
+            case 'dottedcircle':
+                instance = new fabric.Ellipse(extend({
+                    type: 'circle'
+                }, options));
                 break;
             default:
                 instance = {};

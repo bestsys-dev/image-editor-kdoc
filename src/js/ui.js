@@ -413,10 +413,6 @@ class Ui {
             this.eventHandler.save();
         });
     }
-    //
-    // teste(){
-    //     console.log('teste')
-    // }
 
     _removeDownloadEvent() {
         snippet.forEach(this._buttonElements.download, element => {

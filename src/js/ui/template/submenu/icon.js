@@ -7,30 +7,6 @@
 export default ({locale, makeSvgIcon}) => (`
     <ul class="tui-image-editor-submenu-item">
         <li class="tie-icon-add-button">
-            <div class="tui-image-editor-button" data-icontype="icon-arrow">
-                <div>
-                    ${makeSvgIcon(['normal', 'active'], 'icon-arrow', true)}
-                </div>
-                <label>
-                    ${locale.localize('Arrow')}
-                </label>
-            </div>
-            <div class="tui-image-editor-button" data-icontype="icon-arrow-2">
-                <div>
-                    ${makeSvgIcon(['normal', 'active'], 'icon-arrow-2', true)}
-                </div>
-                <label>
-                    ${locale.localize('Arrow-2')}
-                </label>
-            </div>
-            <div class="tui-image-editor-button" data-icontype="icon-arrow-3">
-                <div>
-                    ${makeSvgIcon(['normal', 'active'], 'icon-arrow-3', true)}
-                </div>
-                <label>
-                    ${locale.localize('Arrow-3')}
-                </label>
-            </div>
             <div class="tui-image-editor-button" data-icontype="icon-star">
                 <div>
                     ${makeSvgIcon(['normal', 'active'], 'icon-star', true)}
@@ -81,6 +57,30 @@ export default ({locale, makeSvgIcon}) => (`
                 </div>
                 <label>
                     ${locale.localize('Bubble')}
+                </label>
+            </div>
+             <div class="tui-image-editor-button" data-icontype="icon-arrow">
+                <div>
+                    ${makeSvgIcon(['normal', 'active'], 'icon-arrow', true)}
+                </div>
+                <label>
+                    ${locale.localize('Arrow')}
+                </label>
+            </div>
+            <div class="tui-image-editor-button" data-icontype="icon-arrow-2">
+                <div>
+                    ${makeSvgIcon(['normal', 'active'], 'icon-arrow-2', true)}
+                </div>
+                <label>
+                    ${locale.localize('Arrow-2')}
+                </label>
+            </div>
+            <div class="tui-image-editor-button" data-icontype="icon-arrow-3">
+                <div>
+                    ${makeSvgIcon(['normal', 'active'], 'icon-arrow-3', true)}
+                </div>
+                <label>
+                    ${locale.localize('Arrow-3')}
                 </label>
             </div>
         </li>

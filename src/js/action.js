@@ -115,9 +115,8 @@ export default {
             },
             download: () => {
                 const option = {};
-                option['quality'] = 0.9;
+                // option['quality'] = 0.9;
                 option['format'] = 'jpeg';
-                option['multiplier'] = 0.5;
                 const dataURL = this.toDataURL(option);
                 let imageName = this.getImageName();
                 let blob, type, w;
@@ -135,19 +134,14 @@ export default {
                 }
             },
             save: (urlUploadImage, idUploadImage, options) => {
-                // document.getElementById('loading').style.display = 'inline';
                 const mObj = document.getElementsByClassName('tui-image-editor-save-btn');
-                // mObj[0].style.opacity = 0.5;
-                // mObj[0].disabled = true;
-                //
                 mObj[0].innerHTML = 'Aguarde...';
 
                 const option = {};
-                option['quality'] = 0.9;
+                // option['quality'] = 0.9;
                 option['format'] = 'jpeg';
-                option['multiplier'] = 0.5;
 
-                const dataURL = this.toDataURL(option);
+                const dataURL = this.toDataURL();
                 let imageName = this.getImageName();
                 let blob, type, w;
 
@@ -311,6 +305,8 @@ export default {
                 this.stopDrawingMode();
                 if (type === 'free') {
                     this.startDrawingMode('FREE_DRAWING', settings);
+                } else if (type === 'dottedline') {
+                    this.startDrawingMode('DOTTEDLINE_DRAWING', settings);
                 } else {
                     this.startDrawingMode('LINE_DRAWING', settings);
                 }

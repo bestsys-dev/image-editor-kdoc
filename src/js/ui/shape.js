@@ -28,7 +28,6 @@ class Shape extends Submenu {
         });
         this.type = null;
         this.options = SHAPE_DEFAULT_OPTION;
-
         this._els = {
             shapeSelectButton: this.selector('.tie-shape-button'),
             shapeColorButton: this.selector('.tie-shape-color-button'),
@@ -123,6 +122,8 @@ class Shape extends Submenu {
         this._els.shapeSelectButton.classList.remove('circle');
         this._els.shapeSelectButton.classList.remove('triangle');
         this._els.shapeSelectButton.classList.remove('rect');
+        this._els.shapeSelectButton.classList.remove('dottedrec');
+        this._els.shapeSelectButton.classList.remove('dottedcircle');
     }
 
     /**
@@ -164,7 +165,7 @@ class Shape extends Submenu {
         if (button) {
             this.actions.stopDrawingMode();
             this.actions.discardSelection();
-            const shapeType = this.getButtonType(button, ['circle', 'triangle', 'rect']);
+            const shapeType = this.getButtonType(button, ['circle', 'triangle', 'rect', 'dottedcircle', 'dottedrec']);
 
             if (this.type === shapeType) {
                 this.changeStandbyMode();
